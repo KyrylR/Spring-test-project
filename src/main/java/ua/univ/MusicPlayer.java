@@ -38,4 +38,8 @@ public class MusicPlayer {
     public void playMusic() {
         for (Music item : musicList) System.out.println("Playing: " + item.getSong());
     }
+
+    public void testDestroy() {
+        System.out.println("Dest MP");
+    }
 }
