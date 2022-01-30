@@ -1,11 +1,15 @@
 package ua.univ;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Scope("singleton")
 public class ClassicalMusic implements Music {
     private List<String> songs = new ArrayList<>();
 
@@ -19,10 +23,12 @@ public class ClassicalMusic implements Music {
         return new ClassicalMusic();
     }
 
+    @PostConstruct
     public void doMyInit() {
         System.out.println("Init ClassicalMusic");
     }
 
+    @PreDestroy
     public void doMyDestroy() {
         System.out.println("Destroy ClassicalMusic");
     }

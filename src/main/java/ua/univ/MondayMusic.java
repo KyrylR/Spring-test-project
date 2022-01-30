@@ -1,11 +1,8 @@
 package ua.univ;
 
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 public class MondayMusic implements Music{
     private List<String> songs = new ArrayList<>();
 
