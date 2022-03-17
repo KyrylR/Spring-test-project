@@ -3,6 +3,11 @@ package ua.univ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import ua.univ.musicType.ClassicalMusic;
+import ua.univ.musicType.MondayMusic;
+import ua.univ.musicType.Music;
+import ua.univ.musicType.RockMusic;
+import ua.univ.utils.MusicGenre;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,9 +41,10 @@ public class MusicPlayer {
     }
 
     @Autowired
-    public void setMusic(ClassicalMusic music1, RockMusic music2) {
+    public void setMusic(ClassicalMusic music1, RockMusic music2, MondayMusic music3) {
         this.musicList.add(music1);
         this.musicList.add(music2);
+        this.musicList.add(music3);
     }
 
     public void setMusicList(List<Music> musicList) {

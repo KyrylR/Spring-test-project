@@ -1,9 +1,14 @@
-package ua.univ;
+package ua.univ.musicType;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MondayMusic implements Music{
+@Component
+@Scope("singleton")
+public class MondayMusic implements Music {
     private List<String> songs = new ArrayList<>();
 
     public MondayMusic() {

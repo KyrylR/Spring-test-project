@@ -1,4 +1,4 @@
-package ua.univ;
+package ua.univ.musicType;
 
 import java.util.List;
 

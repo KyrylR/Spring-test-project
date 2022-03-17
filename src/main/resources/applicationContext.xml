@@ -9,18 +9,18 @@
     <context:component-scan base-package="ua.univ"/>
 
     <!--    <bean id="musicBean"-->
-    <!--          class="ua.univ.RockMusic">-->
+    <!--          class="ua.univ.musicType.RockMusic">-->
     <!--    </bean>-->
 
     <!--    <bean id="musicBean2"-->
-    <!--          class="ua.univ.ClassicalMusic"-->
+    <!--          class="ua.univ.musicType.ClassicalMusic"-->
     <!--          init-method="doMyInit"-->
     <!--          destroy-method="doMyDestroy"-->
     <!--          factory-method="getInstance">-->
     <!--    </bean>-->
 
     <!--    <bean id="musicBean3"-->
-    <!--          class="ua.univ.MondayMusic">-->
+    <!--          class="ua.univ.musicType.MondayMusic">-->
     <!--    </bean>-->
 
     <!--    <bean id="musicPlayer"-->

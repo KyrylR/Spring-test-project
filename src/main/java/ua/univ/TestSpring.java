@@ -1,6 +1,7 @@
 package ua.univ;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ua.univ.utils.MusicGenre;
 
 public class TestSpring {
     public static void main(String[] args) {

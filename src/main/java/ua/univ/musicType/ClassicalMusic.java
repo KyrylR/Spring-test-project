@@ -1,4 +1,4 @@
-package ua.univ;
+package ua.univ.musicType;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
